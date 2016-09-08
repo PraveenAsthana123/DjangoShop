@@ -3,3 +3,6 @@ DjangoShop/secrets.py
 
 # ignore .pyc files
 *.pyc
+
+# ignore db.sqlite3 file
+db.sqlite3
