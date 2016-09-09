@@ -4,10 +4,9 @@ from .models import Product
 
 
 def hello_world(request):
-    # return render(request, 'index.html')
-    product = Product.objects.order_by('id')
+    products = Product.objects.order_by('id')
     template = loader.get_template('index.html')
     context = {
-        'product': product
+        'products': products
     }
     return HttpResponse(template.render(context, request))
