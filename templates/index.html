@@ -11,6 +11,8 @@
 <body>
   <h1>Hellooooow!</h1>
   <a href="{% url 'new_product' %}">Add Product</a>
+  <a href="{% url 'clients:log_in' %}">Log in</a>
+  <a href="{% url 'clients:sign_up' %}">Sign up</a>
   <ul>
     {% for pr in products %}
       <li>
